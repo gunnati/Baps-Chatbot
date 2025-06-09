@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Fiancée ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 600px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #e91e63;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    #askBtn {
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    #askBtn:hover {
+      background-color: #d81b60;
+    }
+
+    #chatContainer {
+      margin-top: 30px;
+      display: none;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 12px;
+    }
+
+    @media screen and (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      p { font-size: 1rem; }
+      iframe { height: 500px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Love ❤️</h1>
+    <p>
+      This is only & Only  made for you!  
+      You light up my world and this is a small surprise to bring a smile to your face.
+    </p>
+    <button id="askBtn">Ask Me 💬</button>
+    <div id="chatContainer">
+      <iframe 
+        src="https://default9d566b855fa448b2b15408ebf4fc5c.b3.environment.api.powerplatform.com/copilotstudio/dataverse-backed/authenticated/bots/cr949_guni/conversations?api-version=2022-03-01-preview"
+        allow="microphone; camera">
+      </iframe>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("askBtn").addEventListener("click", function () {
+      const chatBox = document.getElementById("chatContainer");
+      chatBox.style.display = "block";
+      this.style.display = "none"; // hide button after open
+    });
+  </script>
+</body>
+</html>
