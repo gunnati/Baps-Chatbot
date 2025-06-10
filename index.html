@@ -11,22 +11,28 @@
   background: url('DSC_6509.JPG') no-repeat center center fixed;
   background-size: cover;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
   height: 100vh;
   overflow-x: hidden;
-  padding-top: 100px; /* Push content down */
-    padding: 100px 20px 20px 40px;
+  padding: 100px 10px 10px 10px;
+}
+
+     .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 40px; /* Adjust as needed */
 }
 
     .container {
   text-align: left;
-  width: 400px; /* or your preferred width */
+  width: 500px; /* or your preferred width */
   padding: 20px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 16px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
     }
 
     h1 {
@@ -57,13 +63,13 @@
     }
 
     #chatContainer {
-      margin-top: 30px;
+      width: 500px;
       display: none;
     }
 
     iframe {
       width: 100%;
-      height: 600px;
+      height: 450px;
       border: none;
       border-radius: 12px;
     }
