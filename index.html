@@ -91,7 +91,7 @@
     <button id="askBtn">Ask Me 💬</button>
     <div id="chatContainer">
       <iframe 
-        src="https://copilotstudio.microsoft.com/environments/Default-9d566b85-5fa4-48b2-b154-08ebf4fc5cb3/bots/cr949_guni/webchat?__version__=2"
+        src="https://copilotstudio.microsoft.com/environments/Default-9d566b85-5fa4-48b2-b154-08ebf4fc5cb3/bots/cr949_guni/webchat?__version__=2" 
         allow="microphone; camera">
       </iframe>
     </div>
@@ -101,7 +101,7 @@
     document.getElementById("askBtn").addEventListener("click", function () {
       const chatBox = document.getElementById("chatContainer");
       chatBox.style.display = "block";
-      this.style.display = "none"; // hide button after open
+      this.style.display = "none"; // hide button after open // Added custom messages
     });
   </script>
 </body>
